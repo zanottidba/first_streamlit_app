@@ -42,7 +42,7 @@ streamlit.dataframe(fruityvice_normalized)
 # The requirements.txt file you just added to your project tells Streamlit what libraries you plan to use in your project so it can add them in advance
 
 # don't run anything past here while we troubleshoot
-
+streamlit.stop()
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
