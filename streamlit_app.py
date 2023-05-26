@@ -33,3 +33,6 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # write your own comment - what does this do?
 streamlit.dataframe(fruityvice_normalized)
+
+# The requirements.txt file you just added to your project tells Streamlit what libraries you plan to use in your project so it can add them in advance
+import snowflake.connector
